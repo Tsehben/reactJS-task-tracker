@@ -1,74 +1,91 @@
-<<<<<<< HEAD
-# reactJS-task-tracker
-=======
-# Getting Started with Create React App
+# Task Manager App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API](#api)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Available Scripts
+## Overview
+Task Manager App is a simple yet efficient task management application built with React.js. It allows users to manage their tasks by adding, deleting, and toggling reminders for tasks. The app interacts with a backend server to fetch and manipulate tasks.
 
-In the project directory, you can run:
+## Features
+- **Add Task:** Add new tasks with a title, date, and reminder.
+- **Delete Task:** Remove tasks from the list.
+- **Toggle Reminder:** Set reminders for tasks with a simple toggle.
+- **Fetch Tasks:** Retrieve tasks from the server.
+- **Responsive Design:** Optimized for different screen sizes.
 
-### `npm start`
+## Installation
+To get started with the Task Manager App, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-username/task-manager-app.git
+   cd task-manager-app
+2. **Install dependencies:**
+   ```sh
+   npm install
+3. **Start the Development Server:**
+   ```sh
+   npm start
+   
+## Usage
+Once the development server is running, you can access the app at `http://localhost:3000`. The app will fetch tasks from the backend server and display them. You can add, delete, and toggle reminders for tasks using the UI.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Adding a Task
+Click on the "Add Task" button to reveal the task form. Fill in the details and click "Save Task" to add the task to the list.
 
-### `npm test`
+### Deleting a Task
+Click the delete icon next to a task to remove it from the list.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Toggling a Reminder
+Click on a task to toggle the reminder setting.
 
-### `npm run build`
+## API
+The app interacts with a backend server running at `http://localhost:8000`. The following endpoints are used:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Fetch all tasks:**
+  ```sh
+  GET /tasks
+  ```
+  Fetches all tasks from the server.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Fetch a single task:**
+  ```sh
+  GET /tasks/:id
+  ```
+  Fetches a specific task by its ID.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Add a new task:**
+  ```sh
+  POST /tasks
+  ```
+  Adds a new task. Requires a JSON body with task details.
 
-### `npm run eject`
+- **Delete a task:**
+  ```sh
+  DELETE /tasks/:id
+  ```
+  Deletes a specific task by its ID.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Update a task:**
+  ```sh
+  PUT /tasks/:id
+  ```
+  Updates a specific task. Requires a JSON body with updated task details.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
+We welcome contributions to improve the Task Manager App. To contribute, please follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-branch-name`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature-branch-name`
+5. Submit a pull request.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 8deb20e (Initialize project using Create React App)
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
