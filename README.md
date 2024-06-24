@@ -7,7 +7,7 @@
 - [Usage](#usage)
 - [API](#api)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Overview
 Task Manager App is a simple yet efficient task management application built with React.js. It allows users to manage their tasks by adding, deleting, and toggling reminders for tasks. The app interacts with a backend server to fetch and manipulate tasks.
